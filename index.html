@@ -1,0 +1,127 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Permissions-Policy" content="interest-cohort=()" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main_container">
+      <div id="nav" class="navbar navbar-dark bg-danger fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">Meal App</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            onclick="showFavMealList()"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div
+              class="offcanvas-header bg-danger"
+              style="background-color: black"
+            >
+              <h5
+                class="offcanvas-title"
+                id="offcanvasNavbarLabel"
+                style="color: white"
+              >
+                Favourites
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <!--this div is for show favourite meals -->
+            <div
+              id="favourites-body"
+              class="offcanvas-body d-flex justify-content-center flex-wrap"
+            >
+              <div class="spinner-border text-success" role="status">
+                <span class="sr-only">Loading...</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="heading_container">
+        <h1>Meals App</h1>
+      </div>
+
+      <div class="searchbar_container">
+        <!-- <input type="text" class="search_input" id="search_input" />
+        <button class="search_input_submit" onclick="startFetchingFromAPI()">
+          Search
+        </button> -->
+        <div class="search_wrap search_wrap_3">
+          <div class="search_box">
+            <input
+              type="text"
+              class="input"
+              placeholder="search..."
+              id="search_input"
+            />
+            <div class="btn btn_common">
+              <button
+                class="search_input_submit"
+                onclick="startFetchingFromAPI()"
+              >
+                <i class="fas fa-search"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="search_results_container" id="search_results_container">
+        <!-- <div class="meal_card">
+          <img
+            src="https://www.themealdb.com//images//media//meals//y7h0lq1683208991.jpg/preview"
+            alt=""
+            class="meal_image"
+          />
+          <h3 class="meal_title">Meal heading</h3>
+          <button class="add_to_favoutires">
+            <i class="fa-solid fa-heart fa"></i>
+          </button>
+          <button class="get_recipe">Get Recipe!!</button>
+        </div> -->
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+    <a href=""></a>
+  </body>
+</html>

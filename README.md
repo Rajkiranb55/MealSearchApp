@@ -3,7 +3,9 @@
 
 Meal Search App is a web application that is built on HTML,CSS and JavaScript .This application is used to find meals and then  get details such as ingediansts , cooking instructions and cooking videos .All the information is fetched from Themealdb API.
 
+## Demo
 
+Check out the live demo of the application at : https://rajkiranb55.github.io/MealSearchApp/
 
 
 

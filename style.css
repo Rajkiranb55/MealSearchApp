@@ -12,8 +12,12 @@ body {
 .heading_container {
   display: flex;
   justify-content: center;
-  margin-top: 50px;
+  margin-top: 80px;
   margin-bottom: 10px;
+  /* color: white; */
+}
+.heading_container h1 {
+  color: #11263c;
 }
 .searchbar_container {
   display: flex;

@@ -1,7 +1,7 @@
 
-# Meal Search App
+# MealMaze
 
-Meal Search App is a web application that is built on HTML,CSS and JavaScript .This application is used to find meals and then  get details such as ingediansts , cooking instructions and cooking videos .All the information is fetched from Themealdb API.
+MealMaze App is a web application that is built on HTML,CSS and JavaScript .This application is used to find meals and then  get details such as ingediansts , cooking instructions and cooking videos .All the information is fetched from Themealdb API.
 
 ## Demo
 
